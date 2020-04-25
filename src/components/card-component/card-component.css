@@ -1,0 +1,45 @@
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  width: 300px;
+  margin-right: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.title {
+  padding: 1rem 1rem;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.actions {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.badges {
+  border-top: 1px solid #eee;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+}

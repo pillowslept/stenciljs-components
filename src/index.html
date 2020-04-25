@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stenciljs-components.esm.js"></script>
+  <script nomodule src="/build/stenciljs-components.js"></script>
+
+  <style>
+    #image-container {
+      margin: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #card-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <header-component main-title="Cat lover page"></header-component>
+  <div id="card-container">
+    <card-component name="Michilín" years="8" content="This is my cat, he is beautiful and a lovely boy. We love him so much"></card-component>
+    <card-component name="Pepe" years="5" content="He is a cat without home, so we feed him every day."></card-component>
+    <card-component name="Katia" years="7" content="She is my girlfriend's cat."></card-component>
+    <card-component name="Sasha" years="4" content="She is my girlfriend's cat."></card-component>
+  </div>
+  <div id="image-container">
+    <picture-component url="https://cloudfour.com/examples/img-currentsrc/images/kitten-large.png" type="circle"></picture-component>
+    <picture-component url="https://cloudfour.com/examples/img-currentsrc/images/kitten-medium.png"></picture-component>
+    <picture-component url="https://cloudfour.com/examples/img-currentsrc/images/kitten-small.png" type="circle"></picture-component>
+  </div>
+  <footer-component main-title="Cat lover page" subtitle="Antioquia, Colombia" link="https://stenciljs.com/"></footer-component>
+</body>
+</html>
