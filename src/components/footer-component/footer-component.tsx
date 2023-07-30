@@ -1,11 +1,11 @@
-import { Component, ComponentInterface, h, Prop } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'footer-component',
   styleUrl: 'footer-component.css',
   shadow: true,
 })
-export class FooterComponent implements ComponentInterface {
+export class FooterComponent {
 
   @Prop() mainTitle: string;
   @Prop() subtitle: string;

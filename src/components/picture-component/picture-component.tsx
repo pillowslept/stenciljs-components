@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, Prop } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 const SQUARE = 'square';
 const CIRCLE = 'circle';
@@ -8,7 +8,7 @@ const CIRCLE = 'circle';
   styleUrl: 'picture-component.css',
   shadow: true,
 })
-export class PictureComponent implements ComponentInterface {
+export class PictureComponent {
 
   @Prop() url: string;
   @Prop() type = SQUARE;

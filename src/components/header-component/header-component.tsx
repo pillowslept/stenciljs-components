@@ -1,11 +1,11 @@
-import { Component, ComponentInterface, h, Prop, Method } from '@stencil/core';
+import { Component, h, Prop, Method } from '@stencil/core';
 
 @Component({
   tag: 'header-component',
   styleUrl: 'header-component.css',
   shadow: true,
 })
-export class HeaderComponent implements ComponentInterface {
+export class HeaderComponent {
 
   @Prop() mainTitle: string;
 

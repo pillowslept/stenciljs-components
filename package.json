@@ -2,14 +2,18 @@
   "name": "stenciljs-components",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stenciljs-components/stenciljs-components.js",
+  "unpkg": "dist/stenciljs-components/stenciljs-components.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
   "files": [
     "dist/",
     "loader/"
@@ -21,8 +25,15 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
+  "dependencies": {
+    "@stencil/core": "^4.0.0"
+  },
   "devDependencies": {
-    "@stencil/core": "^1.12.2"
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "^20.7.3"
   },
   "license": "MIT"
 }

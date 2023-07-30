@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, Prop, State } from '@stencil/core';
+import { Component, h, Prop, State } from '@stencil/core';
 
 const REACTIONS = ['Love', 'Kiss', 'Hug', 'Touch'];
 
@@ -7,7 +7,7 @@ const REACTIONS = ['Love', 'Kiss', 'Hug', 'Touch'];
   styleUrl: 'card-component.css',
   shadow: true,
 })
-export class CardComponent implements ComponentInterface {
+export class CardComponent {
 
   @Prop() name: string;
   @Prop() years: number = 0;
@@ -61,4 +61,5 @@ export class CardComponent implements ComponentInterface {
       </div>
     );
   }
+
 }

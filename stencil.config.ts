@@ -2,18 +2,23 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'stenciljs-components',
-  taskQueue: 'async',
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader'
+      esmLoaderPath: '../loader',
     },
     {
-      type: 'docs-readme'
+      type: 'dist-custom-elements',
+    },
+    {
+      type: 'docs-readme',
     },
     {
       type: 'www',
-      serviceWorker: null // disable service workers
-    }
-  ]
+      serviceWorker: null, // disable service workers
+    },
+  ],
+  testing: {
+    browserHeadless: "new",
+  },
 };
